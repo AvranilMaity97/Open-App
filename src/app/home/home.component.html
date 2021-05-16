@@ -1,0 +1,155 @@
+<div class="home">
+  <div class="section-1">
+    <div class="left-content">
+      <img class="circle-sm" src="assets/images/circle-sm.svg" alt="" />
+      <div class="headline">We make it Super Simple</div>
+      <div class="hr-dash"></div>
+      <img src="assets/images/collect_img-video.png" alt="" class="left-img" />
+      <img src="assets/images/dots.svg" alt="" class="dots" />
+    </div>
+    <div class="right-content">
+      <form
+        class="eligibility-calculator"
+        [formGroup]="ecForm"
+        (ngSubmit)="onSubmit()"
+      >
+        <img class="circle-lg" src="assets/images/circle-lg.svg" alt="" />
+        <img src="assets/images/dots.svg" alt="" class="dots" />
+        <div class="white-pannel">
+          <div class="pannel-head">Eligibility Calculator</div>
+          <div class="control income">
+            <div class="c-label">Monthly Income</div>
+
+            <div class="c-slider">
+              <app-slider
+                formControlName="monthlyIncome"
+                [min]="100000"
+                [max]="300000"
+              ></app-slider>
+            </div>
+          </div>
+          <div class="control expense">
+            <div class="c-label">Monthly Expense</div>
+
+            <div class="c-slider">
+              <app-slider
+                formControlName="monthlyExpense"
+                [min]="100000"
+                [max]="300000"
+              ></app-slider>
+            </div>
+          </div>
+          <div class="control tenure">
+            <div class="c-label">Repayment Tenure</div>
+            <div class="c-dropdown">
+              <app-dropdown
+                formControlName="tenure"
+                [placeholder]="'Select tenure'"
+                [options]="['3 Months', '6 Months', '1 Year', '2 Years']"
+              ></app-dropdown>
+            </div>
+          </div>
+          <div class="control existing">
+            <div class="c-label">Do you have any existing loans?</div>
+            <div class="c-radio">
+              <label class="switch">
+                <input
+                  formControlName="existingLoans"
+                  type="checkbox"
+                  class="switch-radio"
+                />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+          <div class="control">
+            <div class="c-label">EMI of existing loan (optional)</div>
+            <div class="currency-input">
+              <span class="currency" *ngIf="optional.value">₹ </span
+              ><input
+                formControlName="emiOfExisting"
+                class="c-input"
+                #optional
+                type="number"
+                placeholder="₹ 15000"
+              />
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+        <div class="purple-pannel">
+          <div class="loan-amount">
+            <div class="p-label">Loan Amount</div>
+            <div class="p-text">{{ "100000" | rupee }}</div>
+          </div>
+          <div class="emi">
+            <div class="p-label">Your EMI will be</div>
+            <div class="p-text">{{ "15000" | rupee }}</div>
+          </div>
+          <div class="form-submit">
+            <button class="submit">Get Money</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="section-2">
+    <img class="wave" src="assets/images/wave.svg" alt="" />
+    <div class="left-content">
+      <div class="wrapper">
+        <div class="card-container">
+          <app-card
+            [title]="'Quick cash disbursement'"
+            [text]="'Get terms loans that your business needs within 72 hrs'"
+            [imageUrl]="'assets/images/get-paid-instantly.png'"
+          ></app-card>
+        </div>
+        <div class="filler"></div>
+        <div class="card-container">
+          <app-card
+            [title]="'Ace your business finances'"
+            [text]="
+              'Manage banking, accounting & everything in between, on one platform'
+            "
+            [imageUrl]="'assets/images/freelancer_feature_icon.png'"
+          ></app-card>
+        </div>
+        <div class="card-container">
+          <app-card
+            [title]="'Low-interest rate'"
+            [text]="
+              'Achieve your financial goals with an amazing interest rate starting at 13% per annum'
+            "
+            [imageUrl]="'assets/images/low-interest-rate.png'"
+          ></app-card>
+        </div>
+        <div class="card-container">
+          <app-card
+            [title]="'Loans to fight COVID-19'"
+            [text]="
+              'Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh'
+            "
+            [imageUrl]="'assets/images/covid.png'"
+          ></app-card>
+        </div>
+        <div class="card-container">
+          <app-card
+            [title]="'Zero Paperwork'"
+            [text]="
+              'Get started instantly by submitting only your basic details & bank statements'
+            "
+            [imageUrl]="'assets/images/secure-payments.png'"
+          ></app-card>
+        </div>
+      </div>
+    </div>
+    <div class="right-content">
+      <div class="headline">Boost your business with Open</div>
+      <div class="hr-dash"></div>
+      <div class="text">
+        Get your hands on a term loan that’s crafted for your business
+      </div>
+      <button class="button">Get an Open Account</button>
+    </div>
+  </div>
+</div>

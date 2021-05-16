@@ -1,0 +1,55 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 27px;
+  height: 16px;
+}
+
+.switch .switch-radio {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.3s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 13.5px;
+  height: 13.5px;
+  left: 1.4px;
+  bottom: 1.3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch-radio:checked + .slider {
+  background-color: #663399;
+}
+
+.switch-radio:checked + .slider:before {
+  -webkit-transform: translateX(10.5px);
+  -ms-transform: translateX(10.5px);
+  transform: translateX(10.5px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 8px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

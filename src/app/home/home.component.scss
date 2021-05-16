@@ -1,0 +1,351 @@
+.home {
+  width: 100%;
+  position: relative;
+
+  .section-1 {
+    width: 100%;
+    padding: 270px 132px 0px 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    .left-content {
+      width: 652px;
+      position: relative;
+
+      .circle-sm {
+        position: absolute;
+        z-index: 0;
+        top: -57px;
+        left: -315px;
+      }
+      .headline {
+        margin-left: 53px;
+        margin-bottom: 8px;
+        width: 407px;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 49px;
+        color: #222222;
+        position: relative;
+        z-index: 1;
+      }
+      .hr-dash {
+        margin-left: 53px;
+        margin-bottom: 82px;
+        width: 236px;
+        height: 8px;
+        border-radius: 13px;
+        background-color: rgb(0, 0, 0, 0.7);
+        position: relative;
+        z-index: 1;
+      }
+      .left-img {
+        width: 652px;
+        height: 365px;
+        position: relative;
+        z-index: 1;
+      }
+      .dots {
+        position: absolute;
+        left: 330px;
+        top: calc(428px + 98px);
+      }
+    }
+    .right-content {
+      position: relative;
+      width: 688px;
+      .circle-lg {
+        position: absolute;
+        z-index: 0;
+        top: -520px;
+        left: -248px;
+      }
+      .dots {
+        position: absolute;
+        left: calc(50%);
+        top: calc(656px);
+      }
+      .eligibility-calculator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        position: relative;
+        .white-pannel {
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.06);
+          height: 666px;
+          width: 470px;
+          border-radius: 20px;
+          background-color: #fff;
+          position: relative;
+          z-index: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          .pannel-head {
+            background-color: rgb(232, 235, 243, 0.2);
+            border-radius: 20px 20px 0px 0px;
+            margin-bottom: 31px;
+            width: 100%;
+            height: 70px;
+            font-size: 22px;
+            line-height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          .control {
+            width: 370px;
+            .c-label {
+              margin-bottom: 5px;
+              height: 19px;
+              font-size: 15px;
+              line-height: 19px;
+              font-family: Montserrat;
+              font-weight: 400;
+              color: #222222;
+            }
+
+            .c-slider {
+              width: 100%;
+            }
+            .c-radio {
+              height: 16px;
+            }
+            .currency-input {
+              margin-bottom: 8px;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              .c-input {
+                outline: none;
+                border: none;
+                background-color: transparent;
+                width: 100%;
+                font-family: Montserrat;
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 500;
+                color: #222222;
+                position: relative;
+              }
+              span {
+                font-family: Montserrat;
+                font-size: 25px;
+                line-height: 30px;
+                font-weight: 500;
+                color: #222222;
+              }
+            }
+
+            .line {
+              width: 100%;
+              height: 1px;
+              background-color: rgb(153, 153, 153, 0.5);
+            }
+          }
+          .income {
+            margin-bottom: 42px;
+          }
+          .expense {
+            margin-bottom: 43px;
+          }
+          .tenure {
+            margin-bottom: 40px;
+            .c-label {
+            }
+          }
+          .existing {
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+        }
+        .purple-pannel {
+          height: 450px;
+          width: 209px;
+          background: url("../../assets/images/ec-2-overlay.svg"), #663399;
+          box-shadow: 7px 7px 25px rgb(0, 0, 0, 0.2);
+          border-radius: 0px 20px 20px 0px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          padding: 112px 0px;
+          position: relative;
+          z-index: 1;
+          .loan-amount,
+          .emi {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+          }
+          .p-label {
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            color: rgb(255, 255, 255, 0.7);
+          }
+          .p-text {
+            font-family: Montserrat;
+            font-size: 25px;
+            font-weight: 500;
+            line-height: 30px;
+            color: rgb(255, 255, 255);
+          }
+          .submit {
+            padding: 0px 36.5px;
+            height: 48px;
+            border: none;
+            outline: none;
+            background-color: white;
+            color: #663399;
+            border-radius: 24px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+          }
+          .submit:hover {
+            box-shadow: none;
+            background-color: #4d2674;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+  .section-2 {
+    margin: 192px 0px 0px 0px;
+    padding-bottom: 83px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    .wave {
+      position: absolute;
+      width: 100%;
+      height: 937px;
+      bottom: 0px;
+      z-index: 0;
+    }
+    .left-content {
+      position: relative;
+      z-index: 1;
+      .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 106px;
+        gap: 60px;
+        .filler {
+          width: 392px;
+        }
+
+        div:nth-child(1) {
+          grid-column: 1;
+          grid-row: 1 / 3;
+        }
+        div:nth-child(4) {
+          grid-column: 1;
+          grid-row: 3 / 5;
+        }
+        div:nth-child(6) {
+          grid-column: 1;
+          grid-row: 5 / 7;
+        }
+        div:nth-child(3) {
+          grid-column: 2;
+          grid-row: 2 / 4;
+        }
+        div:nth-child(5) {
+          grid-column: 2;
+          grid-row: 4 / 6;
+        }
+      }
+    }
+    .right-content {
+      position: relative;
+      z-index: 1;
+      padding-left: 138px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      .headline {
+        margin-bottom: 53px;
+        width: 490px;
+        font-family: Montserrat;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 49px;
+        color: #222222;
+        position: relative;
+        z-index: 1;
+      }
+      .hr-dash {
+        margin-bottom: 33px;
+        width: 120px;
+        height: 8px;
+        border-radius: 13px;
+        background-color: #707070;
+        position: relative;
+        z-index: 1;
+      }
+      .text {
+        margin-bottom: 81px;
+        width: 490px;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: "Montserrat", sans-serif;
+        color: #777777;
+      }
+      .button {
+        margin-bottom: 318px;
+        margin-right: 24px;
+        width: 279px;
+        height: 58px;
+        outline: none;
+        border: 2px solid #663399;
+        border-radius: 24px;
+        color: #663399;
+        background-color: transparent;
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 500;
+        font-family: "Montserrat", sans-serif;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      .button:hover {
+        background-color: #663399;
+        color: white;
+      }
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+::placeholder {
+  color: #b5b3b3;
+}

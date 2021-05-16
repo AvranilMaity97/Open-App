@@ -1,0 +1,22 @@
+<div class="dropdown" #dropdownRef>
+  <div class="selected-value" (click)="toggleDropdown()">
+    <div class="value" *ngIf="value.length > 0">
+      {{ value }}
+      <img src="assets/icons/down.svg" alt="" />
+    </div>
+    <div class="value placeholder" *ngIf="!(value.length > 0)">
+      {{ placeholder }}
+      <img src="assets/icons/down.svg" alt="" />
+    </div>
+    <div class="line"></div>
+  </div>
+  <div class="options" *ngIf="toggle" #optionsRef>
+    <div
+      class="option"
+      (click)="setValue(option)"
+      *ngFor="let option of options"
+    >
+      {{ option }}
+    </div>
+  </div>
+</div>

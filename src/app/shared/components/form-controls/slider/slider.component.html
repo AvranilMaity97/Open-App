@@ -1,0 +1,18 @@
+<div class="slider-container">
+  <div class="c-data">
+    {{ "" + rangeVal.value | rupee }}
+  </div>
+  <input
+    type="range"
+    (change)="setValue($event.target.value)"
+    [min]="min"
+    [max]="max"
+    [value]="value"
+    #rangeVal
+    class="slider"
+  />
+  <div class="range">
+    <div class="min">{{ min | rupee }}</div>
+    <div class="max">{{ max | rupee }}</div>
+  </div>
+</div>

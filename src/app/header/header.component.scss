@@ -1,0 +1,116 @@
+@import "../../colors.scss";
+
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.2s ease-in;
+  .header-content {
+    position: relative;
+    z-index: 1;
+    padding: 0px 132px 0px 124px;
+    width: 1920px;
+    height: 123px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+
+    .logo {
+      transition: all 0.5s ease;
+      margin-top: 27px;
+      img {
+        height: 123px;
+        width: 123px;
+      }
+    }
+    .nav-controls {
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .nav-links {
+        margin-right: 60px;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .nav-link {
+          margin-right: 50px;
+          a {
+            font-size: 25px;
+            line-height: 34px;
+            letter-spacing: 0px;
+            text-decoration: none;
+            color: $textColorDark;
+            transition: all 0.2s ease;
+          }
+          a:hover {
+            color: #663399;
+          }
+        }
+        .nav-link:last-child {
+          margin-right: 0px;
+        }
+      }
+      .nav-buttons {
+        .login {
+          margin-right: 24px;
+          padding: 0px 36px;
+          height: 45px;
+          outline: none;
+          border: 2px solid #663399;
+          border-radius: 24px;
+          color: #663399;
+          background-color: transparent;
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          cursor: pointer;
+        }
+        .login:hover {
+          background-color: #663399;
+          color: #fff;
+        }
+        .get-started {
+          padding: 0px 36px;
+          height: 45px;
+          outline: none;
+          border: none;
+          background: transparent
+            linear-gradient(90deg, #9f62c9 0%, #663399 100%) 0% 0% no-repeat
+            padding-box;
+          box-shadow: 0px 0px 20px #00000033;
+          border-radius: 24px;
+          color: white;
+          font-size: 16px;
+          line-height: 19px;
+          font-weight: 500;
+          font-family: "Montserrat", sans-serif;
+          cursor: pointer;
+        }
+        .get-started:hover {
+          background: #663399;
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.sticky {
+  background-color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  z-index: 2;
+  .header-content {
+    height: 90px;
+    .logo {
+      margin-top: 0px;
+      transform: scale(0.6);
+    }
+  }
+}
