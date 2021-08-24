@@ -9,5 +9,11 @@
   </head>
   <body>
     <app-root></app-root>
+    <script>
+      if (window.innerWidth < 1920) {
+        window.parent.document.body.style.zoom = 0.75;
+        console.log(window.innerWidth);
+      }
+    </script>
   </body>
 </html>
